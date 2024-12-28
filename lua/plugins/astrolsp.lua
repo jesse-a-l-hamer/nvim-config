@@ -53,6 +53,12 @@ return {
             -- analysis = {
             --   ignore = { "*" },
             -- },
+            analysis = {
+              diagnosticSeverityOverrides = {
+                reportAny = false,
+                reportMissingTypeStubs = "information",
+              },
+            },
             -- Using Ruff's import organizer
             disableOrganizeImports = true,
           },
